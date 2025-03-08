@@ -1,0 +1,22 @@
+{%include "_formhelpers.html" %}
+{% from "_formhelpers.html" import render_field %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Varsayılan Başlık{% endblock %}</title>
+</head>
+<body>
+
+    {% include "navbar.html" %}  {# Ortak navbar #}
+
+    <main>
+        {% block content %}{% endblock %}  {# İçerik bloğu #}
+    </main>
+
+    {% include "footer.html" %}  {# Ortak footer #}
+
+</body>
+</html>
